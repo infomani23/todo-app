@@ -3,7 +3,7 @@ import "./style.css";
 
 function App() {
   const [todos, setTodos] = useState(() => {
-    const saved = localStorage.getItem("todos");
+  const saved = localStorage.getItem("todos");
     return saved ? JSON.parse(saved) : [];
   });
   const [input, setInput] = useState("");
